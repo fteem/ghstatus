@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://status.github.com/api/messages.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 29 Aug 2014 17:19:23 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=5
+      Status:
+      - 200 OK
+      Content-Length:
+      - '553'
+      X-Octostatus-Request-Id:
+      - 960cfd1d-a05e-4b85-ab23-92f234beb9c5
+      Timing-Allow-Origin:
+      - https://github.com
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: US-ASCII
+      string: ! '[{"status":"good","body":"Everything operating normally.","created_on":"2014-08-27T18:27:59Z"},{"status":"minor","body":"We''re
+        performing a short maintenance procedure which will temporarily impact access
+        to a small number of repositories","created_on":"2014-08-27T18:24:04Z"},{"status":"good","body":"Everything
+        operating normally.","created_on":"2014-08-27T14:30:35Z"},{"status":"minor","body":"We''re
+        performing a short maintenance procedure which will temporarily impact access
+        to a small number of repositories","created_on":"2014-08-27T14:17:58Z"}]'
+    http_version: 
+  recorded_at: Fri, 29 Aug 2014 17:19:23 GMT
+recorded_with: VCR 2.9.0

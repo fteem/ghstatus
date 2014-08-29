@@ -1,5 +1,7 @@
-require "gst/version"
+require 'gst/version'
+require 'gst/api'
+require 'gst/message'
+require 'gst/status'
 
-module Gst
-  # Your code goes here...
+module GST
 end

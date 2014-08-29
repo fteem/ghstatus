@@ -5,11 +5,11 @@ require 'gst/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "gst"
-  spec.version       = Gst::VERSION
+  spec.version       = GST::VERSION
   spec.authors       = ["Ile Eftimov"]
   spec.email         = ["ileeftimov@gmail.com"]
-  spec.summary       = %q{Github status in a gem.}
-  spec.description   = %q{Get Github's status via the command line. Or use it in an app.}
+  spec.summary       = %q{GitHub status in a gem.}
+  spec.description   = %q{Get GitHub's status via the command line. Or use it in an app.}
   spec.homepage      = ""
   spec.license       = "MIT"
 

@@ -1,6 +1,6 @@
 # Gst
 
-TODO: Write a gem description
+Easily get Github's Status as Ruby objects or use the command line tool.
 
 ## Installation
 
@@ -18,7 +18,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To get the current Github Status:
+```ruby
+GST::Status.current 
+```
+
+To get the last Github Status message:
+```ruby
+GST::Message.last
+```
+
+To get most recent Github Status messages:
+```ruby
+GST::Message.recent
+```
 
 ## Contributing
 

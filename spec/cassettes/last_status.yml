@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://status.github.com/api/last-message.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 29 Aug 2014 17:19:23 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=5
+      Status:
+      - 200 OK
+      Content-Length:
+      - '93'
+      X-Octostatus-Request-Id:
+      - 27bc8e9d-bbae-47cb-9f11-02f0b3a4a200
+      Timing-Allow-Origin:
+      - https://github.com
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"good","body":"Everything operating normally.","created_on":"2014-08-27T18:27:59Z"}'
+    http_version: 
+  recorded_at: Fri, 29 Aug 2014 17:19:22 GMT
+recorded_with: VCR 2.9.0
