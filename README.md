@@ -13,10 +13,10 @@ fatal: Could not read from remote repository.
 
 Please make sure you have the correct access rights
 and the repository exists.
-
 ```
 
-And I didn't know if it's my internet connection, or GitHub's APIs.
+And often I didn't know if it's my internet connection's fault, or GitHub's APIs had problems. 
+And I am too lazy to open the browser and check status.github.com
 
 ## Installation
 
