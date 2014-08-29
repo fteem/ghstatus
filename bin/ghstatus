@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+path = File.expand_path(File.dirname(__FILE__))                             
+$:<< "#{path}/../lib"
+
+require 'ghstatus'
+
+arg = ARGV[0]
+available_commands = ['help', 'last', 'recent']
+
+if available_commands.include?(arg)
+  case arg.downcase
+  when 'help'
+    GHStatus::CMDHelper.help
+  when 'last'
+    GHStatus::CMDHelper.print_last_message(GHStatus::Message.last)
+  when 'recent'
+    GHStatus::CMDHelper.print_recent_messages(GHStatus::Message.recent)
+  end
+else
+  GHStatus::CMDHelper.print_status(GHStatus::Status.current)
+end  

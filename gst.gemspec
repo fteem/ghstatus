@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'gst/version'
+require 'ghstatus/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "gst"
-  spec.version       = GST::VERSION
+  spec.name          = "ghstatus"
+  spec.version       = GHStatus::VERSION
   spec.authors       = ["Ile Eftimov"]
   spec.email         = ["ileeftimov@gmail.com"]
   spec.summary       = %q{GitHub status in a gem.}
@@ -22,4 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
   spec.add_dependency "rest-client"
+  spec.add_dependency "rainbow"
 end

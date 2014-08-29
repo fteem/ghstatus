@@ -2,6 +2,22 @@
 
 Easily get Github's Status as Ruby objects or use the command line tool.
 
+## Motivation
+
+I used to get these very often:
+
+```
+➜  repo-name git:(master) git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+```
+
+And I didn't know if it's my internet connection, or GitHub's APIs.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -17,6 +33,8 @@ Or install it yourself as:
     $ gem install gst
 
 ## Usage
+
+### In Ruby
 
 To get the current Github Status:
 ```ruby

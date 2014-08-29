@@ -1,7 +1,7 @@
 require 'rest_client'
 require 'json'
 
-module GST
+module GHStatus
   class Api
     STATUS_URL   = "https://status.github.com/api/status.json"
     LAST_MSG_URL = "https://status.github.com/api/last-message.json"

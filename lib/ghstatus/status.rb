@@ -1,8 +1,8 @@
-module GST
+module GHStatus
   class Status
     class << self
       def current
-        response = GST::Api.status
+        response = GHStatus::Api.status
         new(response['status'], response['last_updated'])
       end
     end
@@ -11,7 +11,7 @@ module GST
 
     def initialize(status, updated_on)
       @status     = status
-      @updated_on = Date.parse(updated_on)
+      @updated_on = DateTime.parse(updated_on)
     end
   end
 end
