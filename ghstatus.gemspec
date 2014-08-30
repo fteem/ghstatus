@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ileeftimov@gmail.com"]
   spec.summary       = %q{GitHub status in a gem.}
   spec.description   = %q{Get GitHub's status via the command line. Or use it in an app.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/fteem/ghstatus"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -19,8 +19,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.5"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "rspec"
-  spec.add_dependency "rest-client"
-  spec.add_dependency "rainbow"
+  spec.add_development_dependency "rake", "~> 10.3"
+  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_dependency "rest-client", "~> 1.7"
+  spec.add_dependency "rainbow", "~> 2.0"
 end
