@@ -51,6 +51,28 @@ To get most recent Github Status messages:
 GST::Message.recent
 ```
 
+### Via command line 
+
+The current API status:
+```bash
+ghstatus
+```
+
+Last API status as a human readable message:
+```bash
+ghstatus last     
+```
+
+Last few API statuses as a human readable messages:
+```bash
+ghstatus recent   
+```
+
+Help:
+```bash
+ghstatus help
+```
+
 ## Contributing
 
 1. Fork it ( http://github.com/<my-github-username>/gst/fork )
