@@ -16,7 +16,7 @@ and the repository exists.
 ```
 
 And often I didn't know if it's my internet connection's fault, or GitHub's APIs had problems. 
-And I am too lazy to open the browser and check status.github.com
+And I am too lazy to open the browser and check status.github.com everytime I see the message above.
 
 ## Installation
 
